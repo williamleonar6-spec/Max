@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Ramandey | Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="slide-in">
+        <img src="profile.png" alt="Profile" style="width:100px;height:100px;border-radius:50%;box-shadow:0 0 30px #00f0ff;margin:2rem auto 1rem auto;display:block;">
+        <h1 style="color:#00f0ff;text-align:center;">William Ramandey</h1>
+        <p style="text-align:center;font-weight:bold;color:#39ff14;">Technology Communication and Network Major</p>
+        <p style="text-align:center;color:#fff;max-width:600px;margin:0 auto 2rem auto;">Welcome to my portfolio! I love building cool things and helping others with tech.</p>
+    </header>
+    <main class="slide-in">
+        <section id="about" class="about-section">
+            <h2 style="color:#00f0ff;">About Me</h2>
+            <p style="color:#fff;">Hello! My name is William. I am 17 years old and live in Jayapura, Papua. I study Technology Communication and Network. I enjoy building web projects and learning new things.</p>
+        </section>
+        <section id="projects" class="projects-section">
+            <h2 style="color:#00f0ff;">My Project</h2>
+            <a href="#" style="color:#39ff14;display:block;margin-bottom:0.5rem;">also this my first project</a>
+            <p style="color:#fff;">this my project im just working on 10/1/2025 this Github project took some time to make so we are only in Development and only testing a few things and only this my first project and im forget to took photo when doing shomting
+            </p>
+            <div class="project-list" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; align-items: stretch; margin-top:2rem;">
+                <div class="project-card" style="flex: 0 1 340px; max-width: 340px; background: rgba(0,240,255,0.15); box-shadow: 0 8px 32px rgba(0,240,255,0.25); border-radius: 20px; padding: 2rem; display: flex; flex-direction: column;">
+                    <h3 style="text-align:center; color:#0a1aff;">Portfolio Website</h3>
+                    <img src="Screenshot%202025-10-01%20165354.png" alt="Portfolio Screenshot" style="width:100%; max-width:260px; border-radius:10px; margin:1rem auto; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.15);">
+                    <div style="display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center; margin-bottom:1rem;">
+                        <span style="background:#00f0ff; color:#0a1aff; border-radius:12px; padding:0.3rem 0.8rem; font-weight:600;">HTML</span>
+                        <span style="background:#00f0ff; color:#0a1aff; border-radius:12px; padding:0.3rem 0.8rem; font-weight:600;">CSS</span>
+                        <span style="background:#00f0ff; color:#0a1aff; border-radius:12px; padding:0.3rem 0.8rem; font-weight:600;">JavaScript</span>
+                        <span style="background:#00f0ff; color:#0a1aff; border-radius:12px; padding:0.3rem 0.8rem; font-weight:600;">VS Code</span>
+                    </div>
+                    <p style="color:#222; text-align:center;">This is my personal portfolio website. I built it using Visual Studio Code to showcase my skills and projects. You can find my contact information and learn more about me here.</p>
+                    <a href="#" style="color:#00f0ff; text-align:center; display:block; font-weight:600; margin-top:1rem; text-decoration:underline;">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section" style="margin-top:2rem;">
+            <h2 style="color:#00f0ff;text-align:center;">My Information Contact</h2>
+            <div style="display:flex; gap:2rem; flex-wrap:wrap; justify-content:center; margin-top:2rem;">
+                <div style="background:rgba(0,240,255,0.15);border-radius:16px;padding:1.5rem 2rem;min-width:180px;box-shadow:0 4px 16px rgba(0,240,255,0.15);text-align:center;">
+                    <div style="font-size:2rem;margin-bottom:0.5rem;">📧</div>
+                    <div style="font-weight:bold;color:#00f0ff;">EMAIL</div>
+                    <div style="color:#fff;">william.ramandey@email.com</div>
+                </div>
+                <div style="background:rgba(0,240,255,0.15);border-radius:16px;padding:1.5rem 2rem;min-width:180px;box-shadow:0 4px 16px rgba(0,240,255,0.15);text-align:center;">
+                    <div style="font-size:2rem;margin-bottom:0.5rem;">📱</div>
+                    <div style="font-weight:bold;color:#00f0ff;">PHONE/WHATSAPP</div>
+                    <div style="color:#fff;">+62 895-3535-3535</div>
+                </div>
+                <div style="background:rgba(0,240,255,0.15);border-radius:16px;padding:1.5rem 2rem;min-width:180px;box-shadow:0 4px 16px rgba(0,240,255,0.15);text-align:center;">
+                    <div style="font-size:2rem;margin-bottom:0.5rem;">📍</div>
+                    <div style="font-weight:bold;color:#00f0ff;">LOCATION</div>
+                    <div style="color:#fff;">Jayapura, Papua</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="slide-in">
+        <p style="color:#00f0ff;text-align:center;">&copy; 2025 William Ramandey. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document.querySelectorAll('.slide-in').forEach((el, i) => {
+        el.style.animationDelay = `${i * 0.4}s`;
+      });
+    </script>
+</body>
+</html>

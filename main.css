@@ -1,0 +1,178 @@
+/* Main CSS for Portfolio */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00f0ff 0%, #0a1aff 100%);
+    background-size: 200% 200%;
+    animation: bg-slide 18s ease-in-out infinite;
+}
+
+@keyframes bg-slide {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeSlideIn 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background: rgba(10, 20, 40, 0.95);
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-bottom: 2px solid #00f0ff;
+}
+
+header h1, .logo {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    color: #00f0ff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+header nav ul li a {
+    color: #00f0ff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+header nav ul li a:hover {
+    color: #0a1aff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    background: transparent;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.hero-content .highlight {
+    color: #00f0ff;
+    text-shadow: 0 0 8px #00f0ff, 0 0 16px #0a1aff;
+}
+
+.hero-content .subtitle {
+    color: #b3e6ff;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    background: #00f0ff;
+    color: #0a1aff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0,240,255,0.15);
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background: #0a1aff;
+    color: #fff;
+}
+
+.portfolio-container, .about-section, .projects-section, .contact-section {
+    background: rgba(10, 20, 40, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 700px;
+    width: 95%;
+    margin: 2rem auto;
+    color: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.portfolio-container:hover, .about-section:hover, .projects-section:hover, .contact-section:hover {
+    box-shadow: 0 12px 40px 0 rgba(0,240,255,0.25), 0 1.5px 8px rgba(10,26,255,0.15);
+}
+
+.project-card {
+    background: rgba(20, 30, 60, 0.85);
+    border-left: 4px solid #00f0ff;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    margin-bottom: 1.5rem;
+}
+
+.project-card:hover {
+    border-color: #0a1aff;
+    box-shadow: 0 4px 16px rgba(10,26,255,0.12);
+}
+
+footer {
+    text-align: center;
+    padding: 1.2rem 0;
+    background: rgba(10, 20, 40, 0.95);
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+    border-top: 2px solid #00f0ff;
+}
+
+@media (max-width: 700px) {
+    .portfolio-container, .about-section, .projects-section, .contact-section {
+        padding: 1.2rem 0.5rem;
+    }
+    header h1, .logo {
+        font-size: 2rem;
+    }
+    .project-list {
+        gap: 0.7rem;
+    }
+}
